@@ -1,13 +1,30 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition-colors duration-200;
+  }
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --accent: #f59e0b;
+  --accent-foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+.dark {
+  --background: #171717;
+  --foreground: #ffffff;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --accent: #fbbf24;
+  --accent-foreground: #171717;
+}
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
