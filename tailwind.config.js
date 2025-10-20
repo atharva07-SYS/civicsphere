@@ -20,6 +20,10 @@ module.exports = {
           foreground: 'var(--accent-foreground)',
         },
       },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
     },
   },
   plugins: [],

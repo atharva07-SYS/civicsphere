@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    // Remove this if you're not using experimental features
-  },
-  // Specify the output directory for production build
+  poweredByHeader: false,
+  compress: true,
+  productionBrowserSourceMaps: false,
   distDir: '.next',
+  images: {
+    unoptimized: false,
+  },
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
